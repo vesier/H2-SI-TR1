@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'sofiapro';
+	src: url('../fonts/sofiapro-light.otf');
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -9,27 +14,46 @@ html, body {
 ***************/
 
 header{
-  height: 50px;
+  position: fixed;
+  top: 0;
   width: 100vw;
-  padding: 0 200px 0 200px;
-  box-sizing: border-box;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
-header a img{
-  height: 50px;
+
+/***************
+      MAIN
+***************/
+
+.topPage{
+  background: url('../images/background_top_page.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
 }
 
-#headerRight{
+.presentationMenu{
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: space-between;
+  padding: 0 245px;
+  padding-top: 150px;
 }
 
-#headerRight a{
-  text-decoration: none;
-  font-size: 15px;
-  color: #000000;
-  margin-left: 50px;
+.topPage img{
+  height: 45px;
+}
+
+.topPage h1{
+  font-family: 'sofiapro';
+  font-weight: lighter;
+  font-size: 80px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  margin-top: 232px;
 }

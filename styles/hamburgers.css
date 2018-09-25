@@ -1,0 +1,103 @@
+.hamburger {
+  padding: 0 15px 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.22s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible; }
+  .hamburger:hover {
+    opacity: 0.7; }
+  .hamburger.is-active:hover {
+    opacity: 1; }
+  .hamburger.is-active .hamburger-inner,
+  .hamburger.is-active .hamburger-inner::before,
+  .hamburger.is-active .hamburger-inner::after {
+    background-color: #FFFFFF; }
+
+.hamburger-box {
+  width: 71px;
+  height: 44px;
+  display: inline-block;
+  position: relative; }
+
+.hamburger-inner {
+  margin-left: 35px;
+  display: block;
+  top: 50%;
+  margin-top: -15px; }
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 39px;
+    height: 4px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.29s;
+    transition-timing-function: ease; }
+    .hamburger-inner::before{
+      width: 63px;
+      right: -10px;
+    }
+    .hamburger-inner::after{
+      width: 39px;
+      left: 8px;
+    }
+  .hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; }
+  .hamburger-inner::before {
+    top: -15px; }
+  .hamburger-inner::after {
+    top: -20px;
+    left: 20px; }
+
+.hamburger--collapse .hamburger-inner {
+  top: auto;
+  bottom: 0;
+  transition-duration: 0.15s;
+  transition-delay: 0.16s;
+  transition-timing-function: cubic-bezier(0.55, 0.55, 0.675, 0.19);
+  transition: all 0.45s; }
+  .hamburger--collapse .hamburger-inner::after {
+    top: -30px;
+    transition: top 0.27s 0.27s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.17s linear; }
+  .hamburger--collapse .hamburger-inner::before {
+    transition: top 0.19s 0.27s cubic-bezier(0.3333, 0.66667, 0.66667, 1), transform 0.20s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+.hamburger--collapse.is-active .hamburger-inner {
+  left: 0;
+  right: 0;
+  top: 56px;
+  margin-left: 30px;
+  transform: translate3d(0, -10px, 0) rotate(-45deg);
+  transition-delay: 0.29s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.35s;
+  width: 63px;}
+  .hamburger--collapse.is-active .hamburger-inner::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    transition: top 0.32s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.17s 0.20s linear; }
+  .hamburger--collapse.is-active .hamburger-inner::before {
+    left: 0;
+    right: 0;
+    top: 0;
+    transform: rotate(-90deg);
+    transition: top 0.07s 0.04s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.10s 0.28s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
