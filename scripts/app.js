@@ -1,14 +1,19 @@
-//Menu hamburger
+//Menu Hamburger
 
 const menu = document.querySelector('.hamburger')
 menu.addEventListener('click', ()=>{
-  menu.classList.toggle('is-active')
+  menu.classList.toggle('isActive')
   document.querySelector('.navbar').classList.toggle('hidden')
   document.querySelector('.socialMedia').classList.toggle('hidden')
   document.querySelector('.topPageTitle').classList.toggle('hidden')
+  if(menu.classList.contains('isActive')){
+    displayMenu()
+  }else{
+    deleteMenu()
+  }
 })
 
-//Arrow animation
+//Arrow Animation
 
 // let upArrowPosition = upArrow.getBoundingClientRect()
 // let downArrowPosition = downArrow.getBoundingClientRect()
@@ -34,11 +39,37 @@ for (let i=0; i<titleA.length; i++) {
 }
 window.onload = changeMessage()
 function changeMessage(){
-  console.log(text[actual_text])
   document.querySelector('.topPageTitle').innerHTML = text[actual_text]
   actual_text++
   if(actual_text >= text.length){
     return
   }
-  setTimeout("changeMessage()",7)
+  setTimeout('changeMessage()',7)
+}
+
+
+//Nav Menu Animation
+let list = ['About our Company', 'Dynamic Visual Mod', 'The Sterka M1', 'Frequently asked Questions', 'Contact Us']
+let txtList = ''
+const menuSelector = document.querySelectorAll('.navbar ul li')
+
+for (let i = 0; i < list.length; i++) {
+  list[i]=list[i].split('')
+}
+
+function displayMenu(){
+  for (let i = 0; i < list.length; i++) {
+    txtList=''
+    for (let j = 0; j < list[i].length; j++) {
+      txtList = txtList + list[i][j]
+      menuSelector[i].innerHTML = txtList
+    }
+  }
+}
+
+
+function deleteMenu(){
+  for (let i = 0; i < menuSelector.length; i++) {
+    while (menuSelector[i].firstChild) menuSelector[i].removeChild(menuSelector[i].firstChild);
+  }
 }
