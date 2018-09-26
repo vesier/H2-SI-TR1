@@ -10,11 +10,14 @@ menu.addEventListener('click', ()=>{
 
 //Arrow Animation
 
-window.onload = setTimeout(()=>{document.querySelector('.arrow').classList.remove('hidden')}, 800)
+window.onload = setTimeout(()=>{
+  document.querySelector('.arrow').classList.remove('hidden')
+  window.onload = document.querySelector('.presentationMenu').classList.remove('hidden')
+}, 800)
 
 //Title Animation
 
-const titleA = ['T','h','e',' ','m','o','s','t',' ','p','o','w','e','r','f','u','l',' ','a','n','d',' ','m','o','d','u','l','a','r',',','<br/>','b','u','i','l','d','-','i','t','-','y','o','u','r','s','e','l','f',' ','e','-','b','i','k','e',',',' ','y','o','u','<br/>','c','a','n',' ','c','u','s','t','o','m','i','z','e',' ','a','n','d',' ','b','u','i','l','d','.']
+const titleA = 'The most powerful and modular, build-it-yourself e-bike, you can customize and build.'.split('')
 let text = [], txt = '', nb_msg = titleA.length-1, actual_text = 0
 for (let i=0; i<titleA.length; i++) {
   text[i] = txt+titleA[i]
@@ -27,5 +30,5 @@ function changeMessage(){
   if(actual_text >= text.length){
     return
   }
-  setTimeout('changeMessage()',7)
+  setTimeout('changeMessage()',13)
 }
