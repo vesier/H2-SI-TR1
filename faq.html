@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset ="UTF-8"/>
+  <title>FAQ</title>
+  <meta name="description" content="description SEO de sa page"/>
+  <link rel="stylesheet" href="styles/faq.css">
+</head>
+<body>
+  <div class="content">
+    <h2>Any Questions?</h2>
+    <p class="title">Please leave your informations and ask any questions we will happy to answer you as soon as possible.</p>
+    <div class="faq">
+      <div class="left">
+        <div class="questions">
+          <div class="open">
+            <p class="ask">What are the terms for the warranty?</p>
+            <button type="button" onclick="toggle_div(this,'one');">+</button>
+          </div>
+          <div id="one" style="display:none;">
+            <p class="answer">6-month warranty on motor</p>
+          </div>
+        </div>
+        <div class="questions">
+          <div class="open">
+            <p class="ask">What are the terms for the warranty?</p>
+            <button type="button" onclick="toggle_div(this,'two');">+</button>
+          </div>
+          <div id="two" style="display:none;">
+            <p class="answer">6-month warranty on motor. For all other parts, a 12 month warranty will apply.</p>
+          </div>
+        </div>
+        <div class="questions">
+          <div class="open">
+            <p class="ask">How long does it take to fully charge the bike?</p>
+            <button type="button" onclick="toggle_div(this,'three');">+</button>
+          </div>
+          <div id="three" style="display:none;">
+            <p class="answer">3-4 hours</p>
+          </div>
+        </div>
+        <div class="questions">
+          <div class="open">
+            <p class="ask">What kind of range does the bike offer with a full charge?</p>
+            <button type="button" onclick="toggle_div(this,'four');">+</button>
+          </div>
+          <div id="four" style="display:none;">
+            <p class="answer">Approximately 250km or 150mi. Our Testing Environment: ~72℉, flat road, normal tire pressure, a 150lb weighs rider, low to no wind resistance, Low Power Assist, High Gear Set up, a 12mi/h average riding speed. Individual rider results may vary based off of riding style and conditions. (*range can vary due to power setting, road conditions, and riding style)</p>
+          </div>
+        </div>
+        <div class="questions">
+          <div class="open">
+            <p class="ask">How do I make sure the bike does not fall apart?</p>
+            <button type="button" onclick="toggle_div(this,'five');">+</button>
+          </div>
+          <div id="five" style="display:none;">
+            <p class="answer">Follow the appropriate steps shown in the instruction manual and perform regular bike maintenance.</p>
+          </div>
+        </div>
+        <div class="questions">
+          <div class="open">
+            <p class="ask">Can I ride the bike on the mountains?</p>
+            <button type="button" onclick="toggle_div(this,'six');">+</button>
+          </div>
+          <div id="six" style="display:none;">
+            <p class="answer">Yes, the Sterka M1 can be used in a variety of environments. We made sure it was modular so that you can upgrade the parts you need for your riding conditions</p>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="questions">
+          <div class="open">
+            <p class="ask">What happens if the battery dies?</p>
+            <button type="button" onclick="toggle_div(this,'seven');">+</button>
+          </div>
+          <div id="seven" style="display:none;">
+            <p class="answer">You can utilize the pedals like a normal bike.</p>
+          </div>
+        </div>
+        <div class="questions">
+          <div class="open">
+            <p class="ask">Can I charge my bike anywhere?</p>
+            <button type="button" onclick="toggle_div(this,'eight');">+</button>
+          </div>
+          <div id="eight" style="display:none;">
+            <p class="answer">Yes, any electrical outlet will provide enough power to charge your Sterka M1.</p>
+          </div>
+        </div>
+        <div class="questions">
+          <div class="open">
+            <p class="ask">Can I order individual parts if there are damages or scratches?</p>
+            <button type="button" onclick="toggle_div(this,'nine');">+</button>
+          </div>
+          <div id="nine" style="display:none;">
+            <p class="answer">Yes, please include the individual part number when contacting Sterka Concepts.</p>
+          </div>
+        </div>
+        <div class="questions">
+          <div class="open">
+            <p class="ask">How fast can the bike go?</p>
+            <button type="button" onclick="toggle_div(this,'ten');">+</button>
+          </div>
+          <div id="ten" style="display:none;">
+            <p class="answer">The bike can go up to 40km/h or approximately 25mi/h</p>
+          </div>
+        </div>
+        <div class="questions">
+          <div class="open">
+            <p class="ask">How can I order and pay for my bike?</p>
+            <button type="button" onclick="toggle_div(this,'eleven');">+</button>
+          </div>
+          <div id="eleven" style="display:none;">
+            <p class="answer">You can pre-order your Sterka M1 here on Kickstarter. After our campaign, you will be able to purchase bikes and additional parts from our website, sterkabikes.com</p>
+          </div>
+        </div>
+        <div class="questions">
+          <div class="open">
+            <p class="ask">Do I need a special license to ride this bike?</p>
+            <button type="button" onclick="toggle_div(this,'twelve');">+</button>
+          </div>
+          <div id="twelve" style="display:none;">
+            <p class="answer">You will need to check your country, state and local government listings on e-bike requirements. If you need special accommodations made for your Sterka M1, please contact us.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner">
+      <p id="contact">Your answer isn't here? Contact us</p>
+      <a href="#">Get in touch</a>
+    </div>
+    <div class="customers">
+      <h3>THEY LOVED IT</h3>
+      <p>- Our customers</p>
+      <div class="catalog">
+        <img src="images/c1.png" alt="Customers 1">
+        <img src="images/c2.png" alt="Customers 2">
+        <img src="images/c3.png" alt="Customers 3">
+        <img src="images/c4.png" alt="Customers 4">
+        <img src="images/c5.png" alt="Customers 5">
+        <img src="images/c6.png" alt="Customers 6">
+      </div>
+    </div>
+  </div>
+    <footer>
+
+    </footer>
+
+    <script src="script/app.js"></script>
+  </body>
+  </html>
