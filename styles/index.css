@@ -111,6 +111,7 @@ li{
   bottom: 10%;
   right: 15%;
   transition: all 1s;
+	cursor: pointer;
 }
 
 .downArrow{
@@ -192,7 +193,7 @@ p{
 }
 
 .history{
-  margin-top: 100px;
+  margin-top: 4%;
   display: flex;
   justify-content: space-between;
 }
