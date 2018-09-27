@@ -15,6 +15,49 @@ html, body {
 }
 
 /***************
+   HEADERBAR
+***************/
+
+.headerBar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 80px;
+	width: 100vw;
+	background: url('../images/background_top_page.jpg');
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 15%;
+	box-sizing: border-box;
+}
+
+.headerBar img{
+	height: 40px;
+}
+
+.rightHeaderBar{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	width: 20vw;
+}
+
+.rightHeaderBar .hamburger{
+	padding-top: 10px;
+}
+
+.rightHeaderBar a{
+	text-decoration: none;
+	color: #FFFFFF;
+	font-weight: lighter;
+}
+
+
+/***************
      HEADER
 ***************/
 
@@ -25,6 +68,7 @@ header{
   height: 100vh;
   padding: 0 15%;
   box-sizing: border-box;
+	z-index: 10;
 }
 
 nav{
@@ -81,13 +125,14 @@ li{
   width: 100vw;
   padding: 0 15%;
   box-sizing: border-box;
+	z-index: 1000;
 }
 
 .presentationMenu{
   display: flex;
   justify-content: space-between;
   padding-top: 9%;
-  z-index: 10000;
+  z-index: 1000;
   transition: all 2s;
 }
 
@@ -186,7 +231,7 @@ p{
   outline: none;
 }
 
-.kickstarter button:active{
+.kickstarter button:hover{
   background: #FFFFFF;
   color: #009E74;
   border: 1px solid #009E74;
@@ -251,10 +296,18 @@ p{
   height: 33%;
 }
 /***************
-     HIDDEN
+    EFFECTS
 ***************/
 
 .hidden{
   visibility: hidden;
   opacity: 0;
+}
+
+.mask{
+	display: none;
+}
+
+.scrollBlock{
+	overflow: hidden;
 }

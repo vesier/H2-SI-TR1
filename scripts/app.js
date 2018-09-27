@@ -2,18 +2,35 @@
 
 const menu = document.querySelector('.hamburger')
 menu.addEventListener('click', ()=>{
+  hamburgerAction()
+})
+
+function hamburgerAction(){
   menu.classList.toggle('isActive')
+  document.querySelector('html').classList.toggle('scrollBlock')
   document.querySelector('.navbar').classList.toggle('hidden')
   document.querySelector('.socialMedia').classList.toggle('hidden')
   document.querySelector('.topPageTitle').classList.toggle('hidden')
-})
-
+}
 //Arrow Animation
 
+const arrow = document.querySelector('.arrow')
 window.onload = setTimeout(()=>{
-  document.querySelector('.arrow').classList.remove('hidden')
+  arrow.classList.remove('hidden')
   window.onload = document.querySelector('.presentationMenu').classList.remove('hidden')
 }, 800)
+
+arrow.addEventListener('click', ()=>{
+  if (menu.classList.contains('isActive')) {
+    hamburgerAction()
+  }
+  window.scroll({
+    top: window.innerHeight,
+    left: 0,
+    behavior: 'smooth'
+  });
+})
+
 
 //Title Animation
 
