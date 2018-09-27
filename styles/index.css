@@ -130,7 +130,7 @@ li{
 
 .content{
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   padding: 0 15%;
   box-sizing: border-box;
   display: flex;
@@ -165,7 +165,7 @@ p{
 }
 
 .kickstarter img:nth-child(1){
-  width: 50%;
+  width: 65%;
 }
 
 .kickstarter img:nth-child(2){
@@ -210,12 +210,12 @@ p{
 ***************/
 
 .video{
-  height: 100vh;
+  height: 80vh;
   width: 100vw;
 }
 
 .video iframe{
-  height: 100vh;
+  height: 80vh;
   width: 100vw;
 }
 
@@ -224,7 +224,7 @@ p{
 ***************/
 
 .customers{
-  padding: 0 15%;
+  padding: 0 5%;
   box-sizing: border-box;
   height: 100vh;
   width: 100vw;
@@ -236,7 +236,7 @@ p{
 
 .customers p {
   font-size: 16px;
-  margin-bottom: 10%;
+  margin-bottom: 2%;
 }
 
 .catalog{
