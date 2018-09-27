@@ -1,0 +1,139 @@
+body{
+  margin:0;
+}
+body h2{
+  color:#F6B93B;
+  font-family: "Poppins";
+  font-weight:600;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
+ p,h3{
+  font-family: "sofia pro";
+  font-weight: lighter;
+}
+body .ask,p{
+  font-size: 17px;
+}
+.title{
+  text-align: center;
+}
+/***************
+    QUESTIONS
+***************/
+
+button{
+  width: 30px;
+  height: 30px;
+  border-radius:30px;
+  background-color: #F6B93B;
+  color:white;
+  font-weight: bolder;
+  font-size: 20px;
+  border:none;
+  margin-top:10px;
+  outline:none;
+}
+.faq{
+  display: flex;
+  justify-content: center;
+  margin-top:50px;
+}
+.questions{
+  border:1px solid #C6C6C6;
+  border-radius:6px;
+  width: 500px;
+  margin-top:20px;
+}
+.questions .ask{
+  padding-left: 20px;
+  height: 25px;
+}
+.left{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.right{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.answer{
+  padding-left:40px;
+  padding-right: 20px;
+}
+.open{
+  display: flex;
+  justify-content: space-between;
+  padding:20px 20px;
+  margin-top:10px;
+}
+
+/***************
+    BANNER
+***************/
+.banner{
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.45)
+    ),url(../images/banner.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    height: 320px;
+    color:white;
+    text-align:center;
+    margin-top:100px;
+  }
+  a{
+    text-transform: uppercase;
+    color:white;
+    opacity: 0.8;
+    font-family: "sofia pro";
+    text-decoration: none;
+    border:#AD893C solid 1px;
+    padding:12px 30px;
+    text-align: center;
+    border-radius: 25px;
+    background-color:#AD893C;
+  }
+  a:hover{
+    opacity: 1;
+  }
+#contact{
+    font-size: 25px;
+    padding-top:100px;
+    padding-bottom: 50px;
+  }
+  /***************
+      CATALOG
+  ***************/
+  h3{
+    color: #F6B93B;
+    font-size: 32px;
+  }
+  .customers{
+    padding: 0 5%;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .customers p {
+    font-size: 16px;
+    margin-bottom: 2%;
+  }
+
+  .catalog{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .catalog img{
+    width: 33%;
+    height: 33%;
+  }

@@ -32,3 +32,15 @@ function changeMessage(){
   }
   setTimeout('changeMessage()',13)
 }
+
+//FAQ Animation
+function toggle_div(bouton, id) {
+  var div = document.getElementById(id);
+  if(div.style.display=="none") {
+    div.style.display = "block";
+    bouton.innerHTML = "-";
+  } else {
+    div.style.display = "none";
+    bouton.innerHTML = "+";
+  }
+}
